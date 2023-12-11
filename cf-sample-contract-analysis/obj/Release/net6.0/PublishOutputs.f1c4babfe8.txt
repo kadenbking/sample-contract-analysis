@@ -1,0 +1,11 @@
+/var/folders/l2/h9rhrbr51rqfjdt_r6q7yjb80000gn/T/rider-publish14724382879837245049/cf-sample-contract-analysis
+/var/folders/l2/h9rhrbr51rqfjdt_r6q7yjb80000gn/T/rider-publish14724382879837245049/appsettings.Development.json
+/var/folders/l2/h9rhrbr51rqfjdt_r6q7yjb80000gn/T/rider-publish14724382879837245049/appsettings.json
+/var/folders/l2/h9rhrbr51rqfjdt_r6q7yjb80000gn/T/rider-publish14724382879837245049/cf-sample-contract-analysis.dll
+/var/folders/l2/h9rhrbr51rqfjdt_r6q7yjb80000gn/T/rider-publish14724382879837245049/cf-sample-contract-analysis.deps.json
+/var/folders/l2/h9rhrbr51rqfjdt_r6q7yjb80000gn/T/rider-publish14724382879837245049/cf-sample-contract-analysis.runtimeconfig.json
+/var/folders/l2/h9rhrbr51rqfjdt_r6q7yjb80000gn/T/rider-publish14724382879837245049/cf-sample-contract-analysis.pdb
+/var/folders/l2/h9rhrbr51rqfjdt_r6q7yjb80000gn/T/rider-publish14724382879837245049/Microsoft.OpenApi.dll
+/var/folders/l2/h9rhrbr51rqfjdt_r6q7yjb80000gn/T/rider-publish14724382879837245049/Swashbuckle.AspNetCore.Swagger.dll
+/var/folders/l2/h9rhrbr51rqfjdt_r6q7yjb80000gn/T/rider-publish14724382879837245049/Swashbuckle.AspNetCore.SwaggerGen.dll
+/var/folders/l2/h9rhrbr51rqfjdt_r6q7yjb80000gn/T/rider-publish14724382879837245049/Swashbuckle.AspNetCore.SwaggerUI.dll
