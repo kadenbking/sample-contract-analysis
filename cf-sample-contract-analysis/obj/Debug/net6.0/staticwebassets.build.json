@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "TFJYNbcj5FVL38kQab7b+b1S64ASjGwSmQ1mD6F2JrM=",
-  "Source": "sample2",
-  "BasePath": "_content/sample2",
+  "Hash": "KSJE0M9oraMaJtQFF3Q4+iD/rHOTPk98PjLvrLiVz8A=",
+  "Source": "cf-sample-contract-analysis",
+  "BasePath": "_content/cf-sample-contract-analysis",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
