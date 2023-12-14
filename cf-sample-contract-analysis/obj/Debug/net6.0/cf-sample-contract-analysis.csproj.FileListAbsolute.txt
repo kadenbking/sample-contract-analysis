@@ -25,3 +25,12 @@
 /Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/obj/Debug/net6.0/cf-sample-contract-analysis.pdb
 /Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/obj/Debug/net6.0/cf-sample-contract-analysis.genruntimeconfig.cache
 /Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/obj/Debug/net6.0/ref/cf-sample-contract-analysis.dll
+/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/bin/Debug/net6.0/Azure.AI.FormRecognizer.dll
+/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/bin/Debug/net6.0/Azure.Core.dll
+/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
+/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/bin/Debug/net6.0/System.Memory.Data.dll
+/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/bin/Debug/net6.0/files/response.json
+/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/bin/Debug/net6.0/files/key-value-pairs.json
+/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/bin/Debug/net6.0/files/paragraphs.json
+/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/bin/Debug/net6.0/Newtonsoft.Json.dll
