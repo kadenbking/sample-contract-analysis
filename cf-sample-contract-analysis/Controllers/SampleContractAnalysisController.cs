@@ -17,7 +17,7 @@ public class SampleContractAnalysisController : ControllerBase
         _configuration = configuration;
     }
 
-    [HttpGet("AnalyzeDocument", Name = "AnalyzeDocument")]
+    [HttpPost("AnalyzeDocument", Name = "AnalyzeDocument")]
     public async Task<SampleAnalysisResults> AnalyzeDocument([FromBody] AnalysisRequest analysisRequest)
     {
         // Model ID Options:
@@ -26,8 +26,8 @@ public class SampleContractAnalysisController : ControllerBase
         
         var result = await GetResult(analysisRequest.ModelId, analysisRequest.DocumentId);
         var cleanedResult = CleanResult(result);
-        await SaveResultsToJsonFile(cleanedResult, "SampleAnalysisResults.json");
-
+        await SaveResultsToJsonFile(cleanedResult, "SampleAnalysisResults2.json");
+        
         return cleanedResult;
     }
 
@@ -40,28 +40,29 @@ public class SampleContractAnalysisController : ControllerBase
         return serviceClient;
     }
 
-    private FileStream GetFileStream(int fileId)
+    private string GetFilePath(int fileId)
     {
-        var filePath = string.Empty;
-
-        switch (fileId)
+        var filePath = fileId switch
         {
-            case 1:
-                filePath = "/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/files/Simple Contract.pdf";
-                break;
-            case 2:
-                filePath = "/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/files/Sample_Utah_Real_Estate_Contract.pdf";
-                break;
-        }
-        
-        using var stream = new FileStream(filePath, FileMode.Open);
-        return stream;
+            1 => "/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/files/Simple Contract.pdf",
+            2 =>
+                "/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/files/Sample_Utah_Real_Estate_Contract.pdf",
+            3 =>
+                "/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/files/AmendmentToContract.pdf",
+            4 =>
+                "/Users/kaden/dev/cf/sample-contract-analysis/cf-sample-contract-analysis/files/FarmAndRanchContract.pdf",
+            _ => string.Empty
+        };
+
+        return filePath;
     }
 
     private async Task<AnalyzeResult> GetResult(string modelId, int fileId)
     {
         var client = GetClient();
-        var stream = GetFileStream(fileId);
+        var filePath = GetFilePath(fileId);
+
+        await using var stream = new FileStream(filePath, FileMode.Open);
         AnalyzeDocumentOperation operation = await client.AnalyzeDocumentAsync(WaitUntil.Completed, modelId, stream);
         return operation.Value;
     }
